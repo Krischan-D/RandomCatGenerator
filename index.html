@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomCat</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    
+    <section>
+        
+        <div class="max-w-7xl mx-auto min-h-[90vh] p-4 ">
+          <div class="flex flex-col items-center text-center pt-12 font-poppins">
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl font-a    ">Random Cat Generator</h1>
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Click the button below to see a new adorable cat!</p>
+            <button  id="btn"   class="cursor-pointer inline-flex items-center justify-center p-2 text-sm  md:px-5 lg:py-3 md:text-base font-medium text-center text-white bg-black rounded-lg ">Get New Cat</button>
+          </div>
+          <div class="w-full flex justify-center mt-8">
+            <div class=" w-full relative   sm:w-1/2 lg:h-98 aspect-square overflow-hidden rounded-lg shadow-lg ">
+                <img class="w-full h-full object-cover" src="build/cat-img.png" alt="Random Cat" id="cat-img">
+                <div class="w-full h-full absolute flex justify-center items-center" id="loader">
+                    <div class="flex items-center justify-center w-fit h-fit">
+                        <div class="flex flex-col items-center justify-center w-fit h-fit">
+                          <!-- Cat Container -->
+                          <div class="flex items-center justify-center w-full h-fit relative">
+                            <!-- Cat Body -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 733 673"
+                              class="w-20"
+                            >
+                              <path
+                                fill="#212121"
+                                d="M111.002 139.5C270.502 -24.5001 471.503 2.4997 621.002 139.5C770.501 276.5 768.504 627.5 621.002 649.5C473.5 671.5 246 687.5 111.002 649.5C-23.9964 611.5 -48.4982 303.5 111.002 139.5Z"
+                              ></path>
+                              <path fill="#212121" d="M184 9L270.603 159H97.3975L184 9Z"></path>
+                              <path fill="#212121" d="M541 0L627.603 150H454.397L541 0Z"></path>
+                            </svg>
+                      
+                            <!-- Tail -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 158 564"
+                              class="w-[17px] absolute top-1/2 animate-tail"
+                            >
+                              <path
+                                fill="#191919"
+                                d="M5.97602 76.066C-11.1099 41.6747 12.9018 0 51.3036 0V0C71.5336 0 89.8636 12.2558 97.2565 31.0866C173.697 225.792 180.478 345.852 97.0691 536.666C89.7636 553.378 73.0672 564 54.8273 564V564C16.9427 564 -5.4224 521.149 13.0712 488.085C90.2225 350.15 87.9612 241.089 5.97602 76.066Z"
+                              ></path>
+                            </svg>
+                      
+                            <!-- Text (ZZZ) -->
+                            <div class="flex flex-col w-[50px] absolute m-0 mb-[100px] ml-[120px]">
+                              <span class="text-black font-bold text-[25px] ml-[10px] animate-zzz">Z</span>
+                              <span class="text-black font-bold text-[15px] animate-zzz">Z</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <footer class="h-[10vh] w-full border-t-2 border-gray-300 max-w-7xl mx-auto flex items-center justify-center mt-4 ">
+            <p class="text-gray-500 ">Powered by The Cat API</p>
+        </footer>
+    </section>
+    
+    <script src="build/index.js"> </script>
+</body>
+</html>
