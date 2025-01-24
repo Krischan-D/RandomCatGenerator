@@ -6,18 +6,18 @@
     <title>RandomCat</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
+<body class="bg-[#f5f5f5]">
     
     <section>
         
         <div class="max-w-7xl mx-auto min-h-[90vh] p-4 ">
-          <div class="flex flex-col items-center text-center pt-12 font-poppins">
+          <div class="flex flex-col items-center text-center pt-8  lg:pt-12 font-poppins">
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl font-a    ">Random Cat Generator</h1>
             <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Click the button below to see a new adorable cat!</p>
-            <button  id="btn"   class="cursor-pointer inline-flex items-center justify-center p-2 text-sm  md:px-5 lg:py-3 md:text-base font-medium text-center text-white bg-black rounded-lg ">Get New Cat</button>
+            <button  id="btn"   class="cursor-pointer text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 ">Get New Cat</button>
           </div>
           <div class="w-full flex justify-center mt-8">
-            <div class=" w-full relative   sm:w-1/2 lg:h-98 aspect-square overflow-hidden rounded-lg shadow-lg ">
+            <div class=" w-full relative h-80  sm:w-1/2 sm:h-98 aspect-square overflow-hidden rounded-lg shadow-lg ">
                 <img class="w-full h-full object-cover" src="build/cat-img.png" alt="Random Cat" id="cat-img">
                 <div class="w-full h-full absolute flex justify-center items-center" id="loader">
                     <div class="flex items-center justify-center w-fit h-fit">
@@ -63,10 +63,10 @@
                 </div>
             </div>
         </div>
-        <footer class="h-[10vh] w-full border-t-2 border-gray-300 max-w-7xl mx-auto flex items-center justify-center mt-4 ">
-            <p class="text-gray-500 ">Powered by The Cat API</p>
-        </footer>
     </section>
+    <footer class=" h-fit py-2 lg:h-fit w-full border-t-2 border-gray-300 max-w-7xl mx-auto flex items-center justify-center mt-4 ">
+        <p class="text-gray-500 ">Powered by The Cat API</p>
+    </footer>
     
     <script src="build/index.js"> </script>
 </body>
