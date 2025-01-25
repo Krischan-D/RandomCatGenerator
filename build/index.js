@@ -4,26 +4,22 @@ const generateButton = document.getElementById('btn')
 const loader = document.getElementById('loader')
 
 async function getCatImage(){
-
     try{
         catContainer.style.display  = 'none'
         loader.style.display = 'flex';
+        
         const response = await fetch(CAT_URL)
         const data = await response.json()
         return data[0].url
     }catch(err){
-        console.log(err)
+        console.log(`Could not fetch data: ${err}`)
     }
 }
-
-
-
-
 
 generateButton.addEventListener('click', async () => {
  
     const [catImage] = await Promise.all([getCatImage(), new Promise(resolve => setTimeout(resolve, 1000))])
-    console.log(catImage)
+    
     if(catImage){
         catContainer.src = catImage
         catContainer.style.display  = 'block'
